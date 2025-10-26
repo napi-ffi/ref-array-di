@@ -1,5 +1,5 @@
 {
-  "name": "ref-array-di",
+  "name": "@napi-ffi/ref-array-di",
   "description": "Create C \"array\" instances on top of Buffers",
   "keywords": [
     "array",
@@ -10,9 +10,12 @@
   "contributors": [
     "Nathan Rajlich <nathan@tootallnate.net>"
   ],
+  "maintainers": [
+    "Gilson Urbano <hello@gilsonurbano.com>"
+  ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/node-ffi-napi/ref-array-di.git"
+    "url": "git://github.com/napi-ffi/ref-array-di.git"
   },
   "main": "./lib/array.js",
   "license": "MIT",
@@ -21,13 +24,13 @@
   },
   "dependencies": {
     "array-index": "^1.0.0",
-    "debug": "^4.3.1"
+    "debug": "^4.3.7"
   },
   "devDependencies": {
     "mocha": "^7.1.1",
-    "node-addon-api": "^3.0.0",
+    "node-addon-api": "^8.2.1",
     "node-gyp-build": "^4.2.1",
     "nyc": "^15.0.0",
-    "ref-napi": "^3.0.2"
+    "@napi-ffi/ref-napi": "^3.0.5"
   }
 }

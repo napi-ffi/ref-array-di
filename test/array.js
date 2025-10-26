@@ -1,6 +1,6 @@
 
 var assert = require('assert')
-  , ref = require('ref-napi')
+  , ref = require('@napi-ffi/ref-napi')
   , ArrayType = require('../')(ref)
   , bindings = require('node-gyp-build')(__dirname);
 

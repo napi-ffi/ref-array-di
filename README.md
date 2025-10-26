@@ -1,21 +1,19 @@
-ref-array-di
-============
+@napi-ffi/ref-array-di
+======================
 ### Create C typed "array" instances on top of Buffers
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/node-ffi-napi/ref-array-di.svg)](https://greenkeeper.io/)
+[![CI](https://github.com/napi-ffi/ref-array-di/actions/workflows/ci.yml/badge.svg)](https://github.com/napi-ffi/ref-array-di/actions/workflows/ci.yml)
+[![NPM Version](https://img.shields.io/npm/v/@napi-ffi/ref-array-di.svg?style=flat)](https://npmjs.org/package/@napi-ffi/ref-array-di)
+[![NPM Downloads](https://img.shields.io/npm/dm/@napi-ffi/ref-array-di.svg?style=flat)](https://npmjs.org/package/@napi-ffi/ref-array-di)
 
-[![NPM Version](https://img.shields.io/npm/v/ref-array-di.svg?style=flat)](https://npmjs.org/package/ref-array-di)
-[![NPM Downloads](https://img.shields.io/npm/dm/ref-array-di.svg?style=flat)](https://npmjs.org/package/ref-array-di)
-[![Build Status](https://travis-ci.org/node-ffi-napi/ref-array-di.svg?style=flat&branch=master)](https://travis-ci.org/node-ffi-napi/ref-array-di?branch=master)
-[![Coverage Status](https://coveralls.io/repos/node-ffi-napi/ref-array-di/badge.svg?branch=master)](https://coveralls.io/r/node-ffi-napi/ref-array-di?branch=master)
-[![Dependency Status](https://david-dm.org/node-ffi-napi/ref-array-di.svg?style=flat)](https://david-dm.org/node-ffi-napi/ref-array-di)
+> Forked from [node-ffi-napi/ref-array-di](https://github.com/node-ffi-napi/ref-array-di) to maintain and modernize the project while preserving the original APIs.
 
 This module offers an "array" implementation on top of Node.js Buffers using
 the ref "type" interface.
 
 **Note**: The only difference to `ref-array` is that this module takes its
 dependency on `ref` via dependency injection, so that it is easier to use
-e.g. `ref-napi` instead.
+e.g. `@napi-ffi/ref-napi` instead.
 
 Installation
 ------------
@@ -23,7 +21,7 @@ Installation
 Install with `npm`:
 
 ``` bash
-$ npm install ref-array-di
+$ npm install @napi-ffi/ref-array-di
 ```
 
 
@@ -33,8 +31,8 @@ Examples
 #### Basic usage
 
 ``` js
-var ref = require('ref')
-var ArrayType = require('ref-array-di')(ref)
+var ref = require('@napi-ffi/ref-napi')
+var ArrayType = require('@napi-ffi/ref-array-di')(ref)
 
 // typedef
 var int = ref.types.int
